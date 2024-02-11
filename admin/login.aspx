@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-  <head>
+<head>
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -16,25 +16,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
 
-      <link href="login.css" rel="stylesheet" />
+    <link href="login.css" rel="stylesheet" />
 
 </head>
+
 <body>
     <div class="bck_img">
         <form id="form1" runat="server">
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
             <nav class="navbar navbar-light bg-light bck_img">
                 <a class="navbar-brand" href="#">
 
                     <%--<img src="images/Logo-4.png" class="d-inline-block align-top img_logo" alt="logo" style="height: 80px !important; margin-top: -20% !important; margin-left: -250% !important;" />--%>
                     <img src="images/Logo-4.png" class="d-inline-block align-top img_logo" alt="logo" style="height: 88px !important; margin-top: 0% !important; margin-left: -4% !important;" />
-                    
-                <a class="heading">
-                    <h2><b>Decision Support System</b></h2>
-                </a>
 
-                <a class="navbar-brand" href="#">
+                    <a class="heading">
+                        <h2><b>Decision Support System</b></h2>
+                    </a>
 
-                </a>
+                    <a class="navbar-brand" href="#">
+
+                    </a>
 
             </nav>
             <section class="vh-1001">
@@ -58,7 +60,7 @@
                             </div>
 
                             <div class="text-center text-lg-start mt-4 pt-2">
-                                <asp:Button ID="btn_login"  runat="server" Text="Login" CssClass=" btn-sm" ValidationGroup="a" />
+                                <asp:Button ID="btn_login" runat="server" Text="Login" CssClass=" btn-sm" ValidationGroup="a" OnClick="btn_login_Click" />
                             </div>
                         </div>
                     </div>
@@ -68,7 +70,7 @@
                     <div class="row">
                         <img style="margin-top: 4% !important" class="flowchart_image" src="images/Flow-Chart-Image_1.png" />
                     </div>
-                    
+
                 </div>
 
             </section>
